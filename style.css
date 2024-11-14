@@ -16,7 +16,7 @@ body {
     background-color: #1c0b02af;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .nav-list {
@@ -49,9 +49,9 @@ body {
 .about-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
 }
 
 .container-aboutS h2{
@@ -59,19 +59,26 @@ body {
 }
 
 .secImgs{
-    background-image: url("https://img.freepik.com/free-vector/black-wave-gradient-modern-background_343694-2084.jpg?t=st=1731312363~exp=1731315963~hmac=c147ebb68d61f99070d61f0a766823c262dd38e610d0467fa3437f1811169974&w=1380");
-    background-attachment: fixed;
+    background-image: url("./meme.jpg");
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.divimg1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
 .divimg1 img {
-    height: 600px;
-    width: 500px;
+    height: 250px;
+    width: 300px;
     border-radius: 15px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .page {
@@ -176,6 +183,10 @@ body {
     font-weight: bold;
 }
 
+.div-text1 h2{
+    font-size: 35px;
+}
+
 .div-rang {
     width: 100%;
     display: flex;
@@ -219,7 +230,33 @@ width: 80%;
 
 iframe {
     width: 100%;
-    height: 300px;
+    height: 400px;
+}
+
+.SoftSkills{
+    margin: 15% 0px;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.SoftSkills h2{
+    font-size: 40px;
+}
+
+.SoftSkills-List{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.SoftSkills-List li p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightcyan;
 }
 
 /* Project Navigation */
@@ -329,11 +366,17 @@ iframe {
 }
 
 .GitHub {
-    color: gray;
+    color: rgb(45, 43, 43);
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 3px;
 }
 
 .x-twitter {
     color: black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 3px;
 }
 
 .social-link {
@@ -343,11 +386,11 @@ iframe {
 }
 
 .social-link:hover {
-    color: whitesmoke;
+    color:#ca2750;
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     .about-section {
         flex-direction: column;
         gap: 20px;
@@ -376,8 +419,6 @@ iframe {
         flex-direction: column;
     }
 }
-
-
 
 
 

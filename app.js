@@ -1,15 +1,9 @@
-function handleFormSubmit(event) {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    if (name && email && message) {
-        alert(`Thank you, ${name}! Your message has been sent.`);
-        document.querySelector('.contact-form').reset();
-    } else {
-        alert('Please fill out all fields.');
-    }
+function hideSpinner() {
+   
+    setTimeout(() => {
+        document.getElementById('spinner').style.display = 'none';
+        document.getElementById('Contnt').style.display = 'block';
+    }, 1000);
 }
 
 
